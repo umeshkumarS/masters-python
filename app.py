@@ -13,7 +13,8 @@ def home():
         return render_template('login.html')
     else:
         return render_template('login.html')
-@app.route('/login', methods=['POST'])
+
+@app.route('/home', methods=['POST'])
 def do_admin_login():
     POST_USERNAME = str(request.form['username'])
     POST_PASSWORD = str(request.form['password'])
@@ -24,7 +25,7 @@ def do_admin_login():
     result = query.first()
     if result:
         session['logged_in'] = True
-        return 'Logged in Successfully'
+        return render_template('home.html')
     else:
         flash('wrong password!')
         return home()
