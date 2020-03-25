@@ -12,8 +12,8 @@ session = Session()
 # user = User("admin","password")
 # session.add(user)
 
-# user = User("python","python")
-# session.add(user)
+user = User("python","python")
+session.add(user)
 
 user = User("umesh","4mc15cs057")
 session.add(user)

@@ -12,8 +12,7 @@ def home():
     if not session.get('logged_in'):
         return render_template('login.html')
     else:
-        return "Hello Boss!"
-
+        return 'Hello'
 @app.route('/login', methods=['POST'])
 def do_admin_login():
     POST_USERNAME = str(request.form['username'])
@@ -25,6 +24,7 @@ def do_admin_login():
     result = query.first()
     if result:
         session['logged_in'] = True
+        return 'Logged in Successfully'
     else:
         flash('wrong password!')
         return home()
