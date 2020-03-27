@@ -2,6 +2,8 @@ import datetime
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from tabledef import *
+import pandas as pd
+import sys
 
 engine = create_engine('sqlite:///tutorial.db', echo=True)
 
@@ -12,11 +14,26 @@ session = Session()
 # user = User("admin","password")
 # session.add(user)
 
-user = User("python","python")
-session.add(user)
+pd.options.display.max_rows = 999
 
-user = User("umesh","4mc15cs057")
-session.add(user)
+df = pd.read_excel('masters-final.xlsx')
+print(len(df))
+
+for i in range(len(df)):
+    r=df['REG.NO'][i]
+    d=df['Date of Birth'].dt.date[i]
+    r=str(r)
+    d=str(d)
+    user = User(r,d)
+    session.add(user)
+    session.commit()
+    print(r,"\n",d)
+
+#user = User("python","python")
+#session.add(user)
+
+#user = User("umesh","4mc15cs057")
+#session.add(user)
 
 # commit the record the database
 session.commit()
