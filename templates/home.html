@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Masters PU College</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -19,20 +19,20 @@
   <div class="row">
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
       <h3>QP-1</h3>
-      <a href="text-file1.pdf" download>
-    <img src="pdf-png.png" alt="W3Schools" width="104" height="142">
+      <a href="{{ url_for('static',filename='text-file1.pdf')}}" download>
+    <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-1" width="104" height="142">
         </a>
     </div>
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
-      <h3>QP-1</h3>
+      <h3>QP-2</h3>
       <a href="text-file1.pdf" download>
-    <img src="pdf-png.png" alt="W3Schools" width="104" height="142">
+    <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-2" width="104" height="142">
         </a>
     </div>
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
-      <h3>QP-1</h3>
+      <h3>QP-3</h3>
       <a href="text-file1.pdf" download>
-    <img src="pdf-png.png" alt="W3Schools" width="104" height="142">
+    <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-3" width="104" height="142">
         </a>
     </div>
   </div>

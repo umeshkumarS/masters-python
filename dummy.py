@@ -32,8 +32,8 @@ for i in range(len(df)):
 #user = User("python","python")
 #session.add(user)
 
-#user = User("umesh","4mc15cs057")
-#session.add(user)
+user = User("umesh","umesh")
+session.add(user)
 
 # commit the record the database
 session.commit()
