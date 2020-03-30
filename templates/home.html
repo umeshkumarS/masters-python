@@ -4,6 +4,8 @@
   <title>Masters PU College</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static',filename='home.css')}}" type="text/css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -17,21 +19,141 @@
   
 <div class="container">
   <div class="row">
+  <h4 style="padding: 5px;text-align: center;">Note : Morning 9:00am Question Papers will be uploaded and evening 4:00pm solutions will be available.</h4>
+  <br>
+    <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
+    <table>
+      <caption style="text-align: center;">PHYSICS/ CHEMISTRY TIME TABLE </caption>
+      
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">PHYSICS  2nd PU chapters</th>
+          <th scope="col">CHEMISTRY 2nd PU chapters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Date">31/03/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">ELECTRIC CHARGES AND FIELDS,
+            ELECTROSTATIC POTENTIAL AND CAPACITANCE</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">SOLID STATE </td>
+        </tr>
+        <tr>
+          <td data-label="Date">02/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">CURRENT ELECTRICITY</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">SOLUTIONS</td>
+        </tr>
+        <tr>
+          <td data-label="Date">04/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">MOVING CHARGES AND MAGNETISM,
+            MAGNETISM AND MATTER</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">ELECTROCHEMISTRY</td>
+        </tr>
+        <tr>
+          <td data-label="Date">06/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">ELECTROMAGNETIC INDUCTION,
+            ALTERNATING CURRENTS
+            ELECTROMAGNETIC WAVES
+            </td>
+          <td data-label="CHEMISTRY 2nd PU chapters">CHEMICAL KINETICS</td>
+        </tr>
+        <tr>
+          <td data-label="Date">08/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">RAY OPTICS</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">SURFACE CHEMISTRY</td>
+        </tr>
+        <tr>
+          <td data-label="Date">10/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">WAVE OPTICS</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">HALOALKENES & HALOARENES</td>
+        </tr>
+        <tr>
+          <td data-label="Date">12/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">DUAL NATURE OF RADIATION AND MATTER,  ATOMS</td>
+          <td data-label="CHEMISTRY 2nd PU chapters">ALCOHOLS, PHENOLS & ETHERS</td>
+        </tr>
+        <tr>
+          <td data-label="Date">14/04/2020</td>
+          <td data-label="PHYSICS  2nd PU chapters">NUCLEI, 
+            SEMICONDUCTOR ELECTRONICS
+            </td>
+          <td data-label="CHEMISTRY 2nd PU chapters">ALDEHYDES, KETONES & CARBOXYLIC ACIDS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+  <div style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
+    <table>
+      <caption style="text-align: center;">MATHEMATICS/ BIOLOGY TIME TABLE</caption>
+      <thead>
+        <tr>
+          <th scope="col">Date</th>
+          <th scope="col">MATHEMATICS  CHAPTERS</th>
+          <th scope="col">BIOLOGY CHAPTERS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Date">1/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">SETS, RELATIONS AND FUNCITONS</td>
+          <td data-label="BIOLOGY CHAPTERS">THE LIVING WORLD, REPRODUCTION IN ORGANISMS </td>
+        </tr>
+        <tr>
+          <td data-label="Date">03/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">TRIGONOMETRY, ITF</td>
+          <td data-label="BIOLOGY CHAPTERS">SEXUAL REPRODUCTION IN FLOWERING PLANTS</td>
+        </tr>
+        <tr>
+          <td data-label="Date">05/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">MATRICES, DETERMINANTS, 
+            BINOMINAL THEOREM
+            </td>
+          <td data-label="BIOLOGY CHAPTERS">PRINCIPLES OF INHERITANCE AND VARIATION</td>
+        </tr>
+        <tr>
+          <td data-label="Date">07/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">LIMITS, CONTINUITY AND DIFFERINTATION</td>
+          <td data-label="BIOLOGY CHAPTERS">ANATOMY OF FLOWERING PLANTS</td>
+        </tr>
+        <tr>
+          <td data-label="Date">09/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">INDEFINITE, DEFINITE INTEGRALS, COMPLEX NUMBERS</td>
+          <td data-label="BIOLOGY CHAPTERS">BIOLOGICAL CLASSIFICATION</td>
+        </tr>
+        <tr>
+          <td data-label="Date">11/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">AREAS, STRAIGHT LINES, CONIC SECTION</td>
+          <td data-label="BIOLOGY CHAPTERS">PLANT KINGDOM</td>
+        </tr>
+        <tr>
+          <td data-label="Date">13/04/2020</td>
+          <td data-label="MATHEMATICS  CHAPTERS">VECTORS, 3D, MATHEMATICAL REASONING.</td>
+          <td data-label="BIOLOGY CHAPTERS">MORPHOLOGY OF FLOWERING PLANTS</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <br>
+
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
-      <h3>QP-1</h3>
-      <a href="{{ url_for('static',filename='text-file1.pdf')}}" download>
+      <h4>QP-1</h4>
+      <a href="{{ url_for('static',filename='physics_electrostatics.docx')}}" download>
     <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-1" width="104" height="142">
         </a>
     </div>
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
-      <h3>QP-2</h3>
-      <a href="text-file1.pdf" download>
+      <h4>QP-2</h4>
+      <a href="{{ url_for('static',filename='physics_electrostatics.docx')}}" download>
     <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-2" width="104" height="142">
         </a>
     </div>
     <div class="col-sm-4" style="box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);text-align: center;padding: 5px;">
-      <h3>QP-3</h3>
-      <a href="text-file1.pdf" download>
+      <h4>QP-3</h4>
+      <a href="{{ url_for('static',filename='physics_electrostatics.docx')}}" download>
     <img src="{{ url_for('static',filename='pdf-png.png')}}" alt="File-3" width="104" height="142">
         </a>
     </div>
