@@ -2,6 +2,8 @@ from flask import Flask
 from flask import Flask, flash, redirect, render_template, request, session, abort
 import os
 from sqlalchemy.orm import sessionmaker
+import datetime
+currentDT = datetime.datetime.now()
 from tabledef import *
 engine = create_engine('sqlite:///tutorial.db', echo=True)
 
@@ -26,6 +28,8 @@ def do_admin_login():
     result = query.first()
     if result:
         session['logged_in'] = True
+#        with open('out.txt', 'a') as f:
+#            print(POST_USERNAME,"------>",currentDT.strftime("%Y-%m-%d %I:%M:%S %p"),filename,file=f)
         return render_template('home.html')
     else:
         flash('wrong password!')
