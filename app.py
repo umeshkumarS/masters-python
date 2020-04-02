@@ -28,8 +28,9 @@ def do_admin_login():
     result = query.first()
     if result:
         session['logged_in'] = True
+        print(POST_USERNAME)
 #        with open('out.txt', 'a') as f:
-#            print(POST_USERNAME,"------>",currentDT.strftime("%Y-%m-%d %I:%M:%S %p"),filename,file=f)
+#            print(POST_USERNAME,"------>",currentDT.strftime("%Y-%m-%d %I:%M:%S %p"),file=f)
         return render_template('home.html')
     else:
         flash('wrong password!')
