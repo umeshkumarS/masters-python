@@ -36,7 +36,7 @@ class email_access():
                 print (subject)
                 att_path, filename  = self.save_attachment(msg)
 
-    def save_attachment(self, msg, download_folder="static/test"):
+    def save_attachment(self, msg, download_folder="static/data"):
 
         att_path = "No attachment found."
         filename = ''
