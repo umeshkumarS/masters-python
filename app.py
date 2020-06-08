@@ -34,17 +34,17 @@ def do_admin_login():
     print(list_of_files)
 
     file_names=[]
-    for f in list_of_files:
-        name , ext = f.split('.')
-        file_names.append(name)
-    print(file_names)
+#    for f in list_of_files:
+#        name , ext = f.split('.')
+#        file_names.append(name)
+#    print(file_names)
     
     if result:
         session['logged_in'] = True
         print(POST_USERNAME)
 #        with open('out.txt', 'a') as f:
 #            print(POST_USERNAME,"------>",currentDT.strftime("%Y-%m-%d %I:%M:%S %p"),file=f)
-        return render_template('home.html',files=list_of_files,file_names=file_names)
+        return render_template('home.html',files=list_of_files)
     else:
         flash('wrong password!')
         return home()
